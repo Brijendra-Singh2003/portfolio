@@ -19,8 +19,8 @@ export default function Projects() {
           <Project
             image={project1}
             title={"Collage, Freshers Portal"}
-            link="/"
-            code="/"
+            link="https://csebootcamp2.vercel.app/"
+            code="https://github.com/Brijendra-Singh2003/BootCamp_2.0"
             isInView={isInView}
             delay="0.3s"
           >
@@ -31,8 +31,8 @@ export default function Projects() {
           <Project
             image={project2}
             title={"Collage, Freshers Portal"}
-            link="/"
-            code="/"
+            link="https://coding-ninja.vercel.app/"
+            code="https://github.com/Brijendra-Singh2003/Coding-Ninja"
             isInView={isInView}
             delay="0.6s"
           >
@@ -42,9 +42,9 @@ export default function Projects() {
           </Project>
           <Project
             image={project3}
-            title={"Collage, Freshers Portal"}
+            title={"Portfolio Website"}
             link="/"
-            code="/"
+            code="https://github.com/Brijendra-Singh2003/portfolio"
             isInView={isInView}
             delay="0.9s"
           >
@@ -79,6 +79,7 @@ function Project({ image, title, children, link, code, isInView, delay }) {
         <a
           className="group flex items-center gap-2 hover:bg-white bg-gray-200 shadow-md transition text-black w-fit py-1.5 px-4 rounded"
           href={link}
+          target="_blank"
         >
           <span>View</span>
           <FaExternalLinkAlt className="h-4 w-4 group-hover:ml-2 duration-300" />
@@ -86,6 +87,7 @@ function Project({ image, title, children, link, code, isInView, delay }) {
         <a
           className="group flex items-center gap-2 hover:bg-white bg-gray-200 shadow-md transition text-black w-fit py-1.5 px-4 rounded"
           href={code}
+          target="_blank"
         >
           <span>Code</span>
           <SiGithub className="h-5 w-5 group-hover:ml-2 duration-300" />
