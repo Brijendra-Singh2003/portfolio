@@ -65,17 +65,19 @@ export default function Contact() {
 
   return (
     <div id="contact" className="py-8 px-2 w-full">
-      <div className="max-w-5xl w-full flex flex-col items-center mx-auto py-8">
+      <div
+        ref={ref}
+        className="max-w-5xl w-full flex flex-col items-center mx-auto py-8"
+      >
         <h1 className="text-5xl font-h text-center pb-8">
           Contact <span className="text-teal-400">Me</span>
         </h1>
         <div
-          ref={ref}
           className="w-full flex md:grid grid-cols-2 gap-4 bg-gray-900 border border-gray-600 flex-wrap items-center px-4 py-8 rounded-lg "
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
           }}
         >
           <img

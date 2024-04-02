@@ -30,15 +30,15 @@ export default function Projects() {
           </Project>
           <Project
             image={project2}
-            title={"Collage, Freshers Portal"}
+            title={"CN IIIT-BH"}
             link="https://coding-ninja.vercel.app/"
             code="https://github.com/Brijendra-Singh2003/Coding-Ninja"
             isInView={isInView}
             delay="0.6s"
           >
-            A portal for freshers to learn about their own batchmates, seniors,
-            societies and access shared resources like notes, questions, and
-            slides.
+            A website for our collage's Coding Ninjas Student Chapter to post
+            information about upcomming events as well as past events organised
+            by them.
           </Project>
           <Project
             image={project3}
@@ -48,9 +48,7 @@ export default function Projects() {
             isInView={isInView}
             delay="0.9s"
           >
-            A portal for freshers to learn about their own batchmates, seniors,
-            societies and access shared resources like notes, questions, and
-            slides.
+            A responsive portfolio website.
           </Project>
         </div>
       </div>
