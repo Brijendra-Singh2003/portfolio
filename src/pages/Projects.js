@@ -78,6 +78,7 @@ function Project({ image, title, children, link, code, isInView, delay }) {
           className="group flex items-center gap-2 hover:bg-white bg-gray-200 shadow-md transition text-black w-fit py-1.5 px-4 rounded"
           href={link}
           target="_blank"
+          rel="noreferrer"
         >
           <span>View</span>
           <FaExternalLinkAlt className="h-4 w-4 group-hover:ml-2 duration-300" />
@@ -86,6 +87,7 @@ function Project({ image, title, children, link, code, isInView, delay }) {
           className="group flex items-center gap-2 hover:bg-white bg-gray-200 shadow-md transition text-black w-fit py-1.5 px-4 rounded"
           href={code}
           target="_blank"
+          rel="noreferrer"
         >
           <span>Code</span>
           <SiGithub className="h-5 w-5 group-hover:ml-2 duration-300" />

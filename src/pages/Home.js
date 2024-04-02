@@ -52,6 +52,8 @@ export default function Home() {
             </h3>
             <div className="flex gap-8 mt-4 py-4 justify-center lg:justify-start">
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://drive.google.com/file/d/1-rdNCMUHChF3o4J3fd6GnkcMWK_m1oFA/view?usp=sharing"
                 className="group relative h-11 w-28 grid place-items-center border-2 border-gray-200  rounded-lg overflow-hidden"
               >
