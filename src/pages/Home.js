@@ -54,7 +54,7 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1-rdNCMUHChF3o4J3fd6GnkcMWK_m1oFA/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/1pSFTRpn2XPitodnZ_FvHEu3e7ZswqXFx?usp=sharing"
                 className="group relative h-11 w-28 grid place-items-center border-2 border-gray-200  rounded-lg overflow-hidden"
               >
                 <div className="absolute left-0 duration-500 h-full w-0 bg-gray-100 group-hover:w-full" />
