@@ -115,11 +115,11 @@ export default function Contact() {
               <input
                 className="w-full bg-transparent outline-none text-gray-200"
                 type="number"
-                placeholder="Phone..."
+                placeholder="Phone...(optional)"
                 name="phone"
                 value={data.phone}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
             <div className="flex w-full rounded-lg bg-gray-800 border border-gray-600 focus-within:border-teal-300 focus-within:text-teal-300 transition-all">
