@@ -88,7 +88,7 @@ export default function Skills() {
           <Card isInView={isInView} delay="1.5s" name="Java">
             <img
               className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
-              src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Java-logo.png"
+              src="/java.svg"
               alt=""
             />
           </Card>
