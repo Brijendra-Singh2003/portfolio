@@ -33,6 +33,7 @@ body {
     sans-serif;
   background-color: #fff;
   color: #000;
+  min-width: 340px;
 }
 
 .font-h {
