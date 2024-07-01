@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer class="relative z-50 bg-black text-[#888] px-8 pb-6">
+    <footer class="relative z-50 bg-gray-900 text-white px-8 pb-6">
       <div class="max-w-6xl mx-auto">
         <div class="flex sm:flex-row flex-col mb-4 ">
           <div class="w-full">
@@ -41,7 +41,7 @@ export default function Footer() {
           <div class="text-center lg:text-left">
             <div class="text-md mt-2 py-1 font-normal ">
               Made with ❤️ by{" "}
-              <span className="text-teal-600">Brijendra Singh</span>
+              <span className="text-[#f0276e]">Brijendra Singh</span>
             </div>
           </div>
         </div>

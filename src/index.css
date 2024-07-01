@@ -4,23 +4,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap');
 
 :root {
-  --background: #222831;
-  --frontground: #393E46;
-  --highlight: #00ADB5;
-  --foreground: #EEEEEE;
-  --text: #ffffff;
+  --background: #ffffff;
+  --frontground: #e8e8e8;
+  --highlight: #ee1963;
+  --foreground: #3e3e3e;
+  --text: #000000;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text);
 }
 
+.text-highlight {
+  color: var(--highlight);
+}
+
+.bg-highlight {
+  background-color: var(--highlight);
+}
+
+.border-highlight {
+  border-color: var(--highlight);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background-color: rgb(3 7 18);
-  color: rgb(243 244 246);
+  background-color: #fff;
+  color: #000;
 }
 
 .font-h {

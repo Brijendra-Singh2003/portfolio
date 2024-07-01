@@ -12,13 +12,18 @@ export default function Navbar() {
   }
 
   useEffect(() => {
+    const header = document.getElementById("header");
+
     window.onscroll = function () {
+      const HEIGHT = header.clientHeight;
+
       navRef.current.classList.remove("duration-300");
       let currentScrollPos = window.scrollY;
+
       if (navRef.current) {
         const newTop = top + prevScrollPos - currentScrollPos;
-        if (newTop < -74) {
-          setTop(-74);
+        if (newTop < -HEIGHT) {
+          setTop(-HEIGHT);
         } else if (newTop > 0 || open) {
           setTop(0);
         } else {
@@ -30,9 +35,12 @@ export default function Navbar() {
     };
 
     window.onscrollend = () => {
+      const HEIGHT = header.clientHeight;
+
       navRef.current.classList.add("duration-300");
-      if (top < -30 && window.scrollY > 74) {
-        setTop(-74);
+
+      if (top < -HEIGHT / 2 && window.scrollY > HEIGHT) {
+        setTop(-HEIGHT);
       } else {
         setTop(0);
       }
@@ -47,25 +55,26 @@ export default function Navbar() {
   return (
     <>
       <header
-        className="w-full border-b border-teal-500 z-20 flex flex-col bg-gray-950 justify-center items-center fixed"
+        id="header"
+        className="w-full bg-white z-20 flex flex-col justify-center items-center fixed"
         style={{ top }}
         ref={navRef}
       >
-        <div className="max-w-7xl w-full flex justify-between p-4 lg:px-16 items-center">
-          <a href="/" className="text-3xl font-semibold">
+        <div className="max-w-7xl w-full flex justify-between p-4 lg:py-8 lg:px-16 items-center">
+          <a href="/" className="text-4xl font-bold">
             Brijendra.
           </a>
-          <div className="sm:flex hidden gap-8 font-semibold text-xl h-fit text-gray-300">
-            <a className="hover:text-teal-500 duration-200" href="/#home">
+          <div className="sm:flex hidden gap-8 font-bold h-fit text-gray-500">
+            <a className="hover:text-black duration-200" href="/#home">
               Home
             </a>
-            <a className="hover:text-teal-500 duration-200" href="/#skills">
+            <a className="hover:text-black duration-200" href="/#skills">
               Skills
             </a>
-            <a className="hover:text-teal-500 duration-200" href="/#projects">
+            <a className="hover:text-black duration-200" href="/#projects">
               Projects
             </a>
-            <a className="hover:text-teal-500 duration-200" href="#contact">
+            <a className="hover:text-black duration-200" href="#contact">
               Contact Me
             </a>
           </div>
@@ -73,11 +82,11 @@ export default function Navbar() {
             <div className="relative sm:max-w-xl mx-auto">
               <nav x-data="{ open: false }">
                 <button
-                  className="text-white w-10 h-10 relative focus:outline-none bg-transparent"
+                  className="text-black w-10 h-10 relative focus:outline-none bg-transparent"
                   onClick={toggle}
                 >
                   <span className="sr-only">Open main menu</span>
-                  <div className="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                  <div className="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <span
                       aria-hidden="true"
                       className={
@@ -131,7 +140,7 @@ export default function Navbar() {
         <div
           onClick={toggle}
           className={
-            "fixed top-0 left-0 sm:hidden bg-black bg-opacity-60 backdrop-blur-md h-screen w-full z-10 duration-300 " +
+            "fixed top-0 left-0 sm:hidden bg-black bg-opacity-60 backdrop-blur-md h-screen w-screen z-10 duration-300 " +
             (open ? "" : "pointer-events-none opacity-0")
           }
         />

@@ -6,10 +6,10 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
-    <div id="projects" className="py-8 px-2 w-full border-b border-teal-600">
+    <div id="projects" className="py-8 px-2 w-full">
       <div className="max-w-7xl w-full flex flex-col items-center mx-auto py-8">
-        <h1 className="text-5xl font-h text-center pb-8">
-          Recent <span className="text-teal-400">Projects</span>
+        <h1 className="text-5xl font-h text-center mb-16">
+          Recent <span className="text-highlight">Projects</span>
         </h1>
         <div className="flex flex-wrap sm-px-8 gap-6 justify-center">
           <ProjectCard

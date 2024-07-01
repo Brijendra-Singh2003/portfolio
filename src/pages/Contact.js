@@ -70,10 +70,10 @@ export default function Contact() {
         className="max-w-5xl w-full flex flex-col items-center mx-auto py-8"
       >
         <h1 className="text-5xl font-h text-center pb-8">
-          Contact <span className="text-teal-400">Me</span>
+          Contact <span className="text-[#ee1963]">Me</span>
         </h1>
         <div
-          className="w-full flex md:grid grid-cols-2 gap-4 bg-gray-900 border border-gray-600 flex-wrap items-center px-4 py-8 rounded-lg "
+          className="w-full flex md:grid grid-cols-2 gap-4 flex-wrap items-center px-4 py-8 "
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
@@ -86,10 +86,10 @@ export default function Contact() {
             className="max-w-96 w-full hidden md:block aspect-square object-contain mx-auto"
           />
           <form onSubmit={sendEmail} className="flex flex-col gap-6 p-4 w-full">
-            <div className="flex w-full rounded-lg bg-gray-800 border border-gray-600 focus-within:border-teal-300 focus-within:text-teal-300 transition-all">
+            <div className="flex w-full border border-gray-600 focus-within:border-[#ee1963] focus-within:text-[#ee1963] transition-all">
               <FaUserAlt className="h-6 w-6 m-4" />
               <input
-                className="w-full bg-transparent outline-none text-gray-200"
+                className="w-full bg-transparent outline-none text-black"
                 type="text"
                 placeholder="Name..."
                 name="from_name"
@@ -98,10 +98,10 @@ export default function Contact() {
                 required
               />
             </div>
-            <div className="flex w-full rounded-lg bg-gray-800 border border-gray-600 focus-within:border-teal-300 focus-within:text-teal-300 transition-all">
+            <div className="flex w-full border border-gray-600 focus-within:border-[#ee1963] focus-within:text-[#ee1963] transition-all">
               <MdEmail className="h-6 w-6 m-4" />
               <input
-                className="w-full bg-transparent outline-none text-gray-200"
+                className="w-full bg-transparent outline-none text-black"
                 type="email"
                 placeholder="Email..."
                 name="email"
@@ -110,10 +110,10 @@ export default function Contact() {
                 required
               />
             </div>
-            <div className="flex w-full rounded-lg bg-gray-800 border border-gray-600 focus-within:border-teal-300 focus-within:text-teal-300 transition-all">
+            <div className="flex w-full border border-gray-600 focus-within:border-[#ee1963] focus-within:text-[#ee1963] transition-all">
               <FaPhoneAlt className="h-6 w-6 m-4" />
               <input
-                className="w-full bg-transparent outline-none text-gray-200"
+                className="w-full bg-transparent outline-none text-black"
                 type="number"
                 placeholder="Phone...(optional)"
                 name="phone"
@@ -122,10 +122,10 @@ export default function Contact() {
                 // required
               />
             </div>
-            <div className="flex w-full rounded-lg bg-gray-800 border border-gray-600 focus-within:border-teal-300 focus-within:text-teal-300 transition-all">
+            <div className="flex w-full border border-gray-600 focus-within:border-[#ee1963] focus-within:text-[#ee1963] transition-all">
               <AiFillMessage className="h-6 w-6 m-4" />
               <textarea
-                className="py-4 w-full h-36 bg-transparent outline-none text-gray-200"
+                className="py-4 w-full h-36 bg-transparent outline-none text-black"
                 type="text"
                 placeholder="Message..."
                 name="message"
@@ -136,7 +136,7 @@ export default function Contact() {
             </div>
             <button
               disabled={loading}
-              className="px-4 py-2 bg-white hover:bg-gray-200 text-black rounded-lg disabled:opacity-40 disabled:cursor-not-allowed"
+              className="px-4 py-2 border bg-[#ee1963] hover:bg-[#ff387e] text-white disabled:opacity-40 disabled:cursor-not-allowed"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>

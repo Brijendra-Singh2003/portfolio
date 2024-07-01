@@ -10,7 +10,7 @@ const ProjectCard = ({ image, title, children, projectLink, codeLink }) => {
   return (
     <div
       ref={ref}
-      className="max-w-96 bg-gray-800 text-gray-100 border border-gray-700 p-3 rounded-md flex flex-col gap-2"
+      className="max-w-96 text-gray-100 p-3 flex flex-col gap-4"
       style={{
         transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,
@@ -18,15 +18,15 @@ const ProjectCard = ({ image, title, children, projectLink, codeLink }) => {
       }}
     >
       <img
-        className="w-full aspect-video bg-gray-600 rounded"
+        className="w-full aspect-video bg-gray-600"
         src={image}
         alt=""
       />
-      <h2 className=" font-semibold px-1 text-xl">{title}</h2>
-      <p className="text-gray-300 text-justify px-1">{children}</p>
-      <div className="flex gap-2 flex-wrap mt-2">
+      <h2 className="text-black font-bold px-1 text-xl">{title}</h2>
+      <p className=" text-black text-justify px-1">{children}</p>
+      <div className="flex gap-2 flex-wrap my-2">
         <a
-          className="group flex items-center gap-2 hover:bg-white bg-gray-200 shadow-md transition text-black w-fit py-1.5 px-4 rounded"
+          className="group flex items-center gap-2 bg-highlight transition text-white w-fit py-1.5 px-4"
           href={projectLink}
           target="_blank"
           rel="noreferrer"
@@ -35,7 +35,7 @@ const ProjectCard = ({ image, title, children, projectLink, codeLink }) => {
           <FaExternalLinkAlt className="h-4 w-4 group-hover:ml-2 duration-300" />
         </a>
         <a
-          className="group flex items-center gap-2 hover:bg-white bg-gray-200 shadow-md transition text-black w-fit py-1.5 px-4 rounded"
+          className="group flex items-center gap-2 bg-[#ffc600] transition text-black w-fit py-1.5 px-4"
           href={codeLink}
           target="_blank"
           rel="noreferrer"

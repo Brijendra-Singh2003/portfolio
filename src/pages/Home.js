@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Background from "../components/Background";
-import image from "../assets/myImage.jpeg";
+import image from "../assets/myImage.avif";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
@@ -14,15 +14,15 @@ export default function Home() {
     <>
       <main
         id="home"
-        className="w-full border-b border-teal-600 flex justify-center mt-16 pt-4 pb-16 px-4 items-center relative"
+        className="w-full flex justify-center mt-16 pt-4 pb-16 px-4 items-center relative"
       >
-        <Background />
+        {/* <Background /> */}
         <div
           ref={ref}
           className="flex lg:py-20 flex-col max-w-7xl w-full lg:grid grid-cols-2"
         >
           <div
-            className="lg:order-2"
+            className="lg:order-2 row-span-2"
             style={{
               transform: isInView ? "none" : "translateY(100px)",
               opacity: isInView ? 1 : 0,
@@ -36,18 +36,18 @@ export default function Home() {
             />
           </div>
           <div
-            className="p-2 sm:p-8 flex mx-auto flex-col text-center lg:text-left justify-center"
+            className="p-2 sm:p-6 flex mx-auto flex-col text-center lg:text-left justify-center"
             style={{
               transform: isInView ? "none" : "translateY(100px)",
               opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
             }}
           >
-            <h1 className="text-xl sm:text-4xl font-h">Hi, I am</h1>
-            <h1 className="text-2xl text-teal-400 sm:text-5xl font-h">
+            <h1 className="text-lg sm:text-4xl font-h">Hi, I am</h1>
+            <h1 className="text-2xl text-highlight mt-2 sm:text-5xl font-h">
               Brijendra Singh
             </h1>
-            <h3 className="sm:text-3xl font-bold lg:mt-6">
+            <h3 className="sm:text-2xl lg:mt-4">
               Full-Stack Developer
             </h3>
             <div className="flex gap-8 mt-4 py-4 justify-center lg:justify-start">
@@ -55,10 +55,10 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
                 href="https://drive.google.com/drive/folders/1pSFTRpn2XPitodnZ_FvHEu3e7ZswqXFx?usp=sharing"
-                className="group relative h-11 w-28 grid place-items-center border-2 border-gray-200  rounded-lg overflow-hidden"
+                className="group relative h-11 w-28 grid place-items-center border-2 border-gray-600  rounded-lg overflow-hidden"
               >
-                <div className="absolute left-0 duration-500 h-full w-0 bg-gray-100 group-hover:w-full" />
-                <button className="absolute font-bold py-2 px-4 rounded group-hover:text-gray-900 duration-500">
+                <div className="absolute left-0 duration-500 h-full w-0 bg-gray-800 group-hover:w-full" />
+                <button className="absolute font-bold py-2 px-4 rounded group-hover:text-white duration-500">
                   Resume
                 </button>
               </a>
@@ -73,16 +73,16 @@ export default function Home() {
             }}
           >
             <SocialLink href="https://github.com/Brijendra-Singh2003">
-              <TbBrandGithubFilled className="absolute h-8 w-8 group-hover:text-gray-900 duration-500" />
+              <TbBrandGithubFilled className="absolute h-8 w-8 group-hover:text-white duration-500" />
             </SocialLink>
             <SocialLink href="https://twitter.com/BrijendraS_op">
-              <FaXTwitter className="absolute h-6 w-6 group-hover:text-gray-900 duration-500" />
+              <FaXTwitter className="absolute h-6 w-6 group-hover:text-white duration-500" />
             </SocialLink>
             <SocialLink href="https://www.linkedin.com/in/brijendra-singh-047400241/">
-              <FaLinkedinIn className="absolute h-6 w-6 group-hover:text-gray-900 duration-500" />
+              <FaLinkedinIn className="absolute h-6 w-6 group-hover:text-white duration-500" />
             </SocialLink>
             <SocialLink href="https://instagram.com/brijendra361?igshid=YmMyMTA2M2Y=">
-              <GrInstagram className="absolute h-6 w-6 group-hover:text-gray-900 duration-500" />
+              <GrInstagram className="absolute h-6 w-6 group-hover:text-white duration-500" />
             </SocialLink>
           </div>
         </div>
@@ -96,9 +96,9 @@ const SocialLink = ({ href = "/", children }) => (
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="group relative grid place-items-center h-12 w-12 border-2 border-teal-400 text-teal-400 rounded-full overflow-hidden"
+    className="group relative grid place-items-center h-12 w-12 border-2 border-gray-600 text-black rounded-full overflow-hidden"
   >
-    <div className="absolute left-0 duration-500 h-full w-0 bg-teal-400 group-hover:w-full" />
+    <div className="absolute left-0 duration-500 h-full w-0 bg-black group-hover:w-full" />
     {children}
   </a>
 );

@@ -15,109 +15,109 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="py-8 w-full sm:px-4 border-b border-teal-600 flex justify-center rounded-t-xl"
+      className="py-8 w-full sm:px-4 flex justify-center rounded-t-xl"
     >
       <div className="w-full max-w-7xl py-8">
         <h1 className="pb-8 text-center text-5xl font-h">
-          Skills & <span className="text-teal-400">Abilities</span>
+          Skills & <span className="text-highlight">Abilities</span>
         </h1>
         <div
           ref={ref}
           className="max-w-5xl mx-auto flex gap-6 bg-opacity-40 flex-wrap items-center justify-center px-4 py-8 rounded-lg "
         >
           <Card isInView={isInView} delay="0.3s" name="ReactJS">
-            <FaReact className="h-12 w-12 sm:h-16 sm:w-16 p-1 text-sky-400" />
+            <FaReact className="size-16 p-1 text-sky-400" />
           </Card>
           <Card isInView={isInView} delay="0.4s" name="NextJS">
-            <SiNextdotjs className="h-12 w-12 sm:h-16 sm:w-16 p-1" />
+            <SiNextdotjs className="size-16 p-1" />
           </Card>
           <Card isInView={isInView} delay="0.5s" name="ExpressJS">
-            <SiExpress className="h-12 w-12 sm:h-16 sm:w-16 p-1" />
+            <SiExpress className="size-16 p-1" />
           </Card>
           <Card isInView={isInView} delay="0.6s" name="NodeJS">
-            <FaNodeJs className="h-12 w-12 sm:h-16 sm:w-16 p-1 text-green-600" />
+            <FaNodeJs className="size-16 p-1 text-green-600" />
           </Card>
           <Card isInView={isInView} delay="0.7s" name="MongoDB">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Mongodb-icon.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="0.8s" name="Postgresql">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="0.9s" name="Prisma">
-            <SiPrisma className="h-12 w-12 sm:h-16 sm:w-16 p-1" />
+            <SiPrisma className="size-16 p-1" />
           </Card>
           <Card isInView={isInView} delay="1s" name="Docker">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Docker-svgrepo-com.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="1.1s" name="TailwindCSS">
-            <SiTailwindcss className="h-12 w-12 sm:h-16 sm:w-16 p-1 text-sky-400" />
+            <SiTailwindcss className="size-16 p-1 text-sky-400" />
           </Card>
           <Card isInView={isInView} delay="1.2s" name="HTML">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="1.3s" name="CSS3">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="1.4s" name="JavaScript">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="1.5s" name="Java">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="/java.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="1.6s" name="Pyhton">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Python_logo_01.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="1.7s" name="C">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="1.8s" name="C++">
             <img
-              className="h-12 w-12 sm:h-16 sm:w-16 p-1 object-contain"
+              className="size-16 p-1 object-contain"
               src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
               alt=""
             />
           </Card>
           <Card isInView={isInView} delay="1.9s" name="Git VCS">
-            <BiLogoGit className="h-12 w-12 sm:h-16 sm:w-16 p-1 text-orange-600" />
+            <BiLogoGit className="size-16 p-1 text-orange-600" />
           </Card>
           <Card isInView={isInView} delay="2s" name="GitHub">
-            <RxGithubLogo className="h-12 w-12 sm:h-16 sm:w-16 p-1" />
+            <RxGithubLogo className="size-16 p-1" />
           </Card>
         </div>
       </div>
@@ -128,7 +128,7 @@ export default function Skills() {
 function Card({ name = "", children, isInView, delay = "0.25s" }) {
   return (
     <div
-      className="w-24 sm:w-32 aspect-square flex items-center justify-center sm:gap-2 flex-col rounded border border-gray-700 bg-gray-800 hover:border-teal-700 hover:shadow-md duration-300"
+      className="w-24 sm:w-32 aspect-square flex items-center justify-center sm:gap-2 flex-col rounded hover:shadow-md duration-300"
       style={{
         transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,
