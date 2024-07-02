@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Background from "../components/Background";
+// import Background from "../components/Background";
 import image from "../assets/myImage.avif";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
@@ -71,7 +71,7 @@ export default function Home() {
               }}
             >
               <SocialLink href="https://github.com/Brijendra-Singh2003">
-                <TbBrandGithubFilled className="absolute size-8 group-hover:text-white duration-500" />
+                <TbBrandGithubFilled className="absolute size-7 group-hover:text-white duration-500" />
               </SocialLink>
               <SocialLink href="https://twitter.com/BrijendraS_op">
                 <FaXTwitter className="absolute size-6 group-hover:text-white duration-500" />
