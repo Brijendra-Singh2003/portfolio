@@ -26,7 +26,7 @@ export default function Home() {
             style={{
               transform: isInView ? "none" : "translateY(100px)",
               opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
+              transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}
           >
             <img
@@ -40,7 +40,7 @@ export default function Home() {
             style={{
               transform: isInView ? "none" : "translateY(100px)",
               opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
+              transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}
           >
             <h1 className="text-lg sm:text-4xl font-h">Hi, I am</h1>
@@ -55,8 +55,8 @@ export default function Home() {
                 href="https://drive.google.com/file/d/1GJ0Xwj1EWs8DsrJAlMn_vvC7kDAzemF6/view?usp=drive_link"
                 className="group relative h-11 w-28 grid place-items-center border-2 border-gray-600 overflow-hidden"
               >
-                <div className="absolute left-0 duration-500 h-full w-0 bg-gray-800 group-hover:w-full" />
-                <button className="absolute font-bold py-2 px-4 rounded group-hover:text-white duration-500">
+                <div className="absolute left-0 duration-300 h-full w-0 bg-gray-800 group-hover:w-full" />
+                <button className="absolute font-bold py-2 px-4 rounded group-hover:text-white duration-300">
                   Resume
                 </button>
               </a>
@@ -67,20 +67,20 @@ export default function Home() {
               style={{
                 transform: isInView ? "none" : "translateY(100px)",
                 opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
               }}
             >
               <SocialLink href="https://github.com/Brijendra-Singh2003">
-                <TbBrandGithubFilled className="absolute size-7 group-hover:text-white duration-500" />
+                <TbBrandGithubFilled className="absolute size-7 group-hover:text-white duration-300" />
               </SocialLink>
               <SocialLink href="https://twitter.com/BrijendraS_op">
-                <FaXTwitter className="absolute size-6 group-hover:text-white duration-500" />
+                <FaXTwitter className="absolute size-6 group-hover:text-white duration-300" />
               </SocialLink>
               <SocialLink href="https://www.linkedin.com/in/brijendra-singh-047400241/">
-                <FaLinkedinIn className="absolute size-6 group-hover:text-white duration-500" />
+                <FaLinkedinIn className="absolute size-6 group-hover:text-white duration-300" />
               </SocialLink>
               <SocialLink href="https://instagram.com/brijendra361?igshid=YmMyMTA2M2Y=">
-                <GrInstagram className="absolute size-6 group-hover:text-white duration-500" />
+                <GrInstagram className="absolute size-6 group-hover:text-white duration-300" />
               </SocialLink>
             </div>
           </div>
@@ -97,7 +97,7 @@ const SocialLink = ({ href = "/", children }) => (
     rel="noreferrer"
     className="group relative grid place-items-center size-12 border-2 border-gray-600 text-black rounded-md overflow-hidden"
   >
-    <div className="absolute left-0 duration-500 h-full w-0 bg-black group-hover:w-full" />
+    <div className="absolute left-0 duration-300 h-full w-0 bg-black group-hover:w-full" />
     {children}
   </a>
 );

@@ -12,20 +12,18 @@ export default function Navbar() {
   }
 
   useEffect(() => {
-    const header = document.getElementById("header");
-
     window.onscroll = function () {
-      const HEIGHT = header.clientHeight;
+      const HEIGHT = navRef.current.clientHeight;
 
       navRef.current.classList.remove("duration-300");
       let currentScrollPos = window.scrollY;
 
       if (navRef.current) {
         const newTop = top + prevScrollPos - currentScrollPos;
-        if (newTop < -HEIGHT) {
-          setTop(-HEIGHT);
-        } else if (newTop > 0 || open) {
+        if (newTop > 0 || open) {
           setTop(0);
+        } else if (newTop < -HEIGHT) {
+          setTop(-HEIGHT);
         } else {
           setTop(newTop);
         }
@@ -35,7 +33,7 @@ export default function Navbar() {
     };
 
     window.onscrollend = () => {
-      const HEIGHT = header.clientHeight;
+      const HEIGHT = navRef.current.clientHeight;
 
       navRef.current.classList.add("duration-300");
 
@@ -56,11 +54,11 @@ export default function Navbar() {
     <>
       <header
         id="header"
-        className="w-full bg-white z-20 flex flex-col justify-center items-center fixed"
+        className="w-full shadow bg-white z-20 flex flex-col justify-center items-center fixed"
         style={{ top }}
         ref={navRef}
       >
-        <div className="max-w-7xl w-full flex justify-between p-4 lg:py-8 lg:px-16 items-center">
+        <div className="max-w-7xl w-full flex justify-between p-4 items-center">
           <a href="/" className="text-4xl font-bold">
             Brijendra.
           </a>

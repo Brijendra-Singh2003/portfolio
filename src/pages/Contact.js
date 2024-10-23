@@ -77,7 +77,7 @@ export default function Contact() {
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
+            transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
           }}
         >
           <img

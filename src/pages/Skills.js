@@ -128,11 +128,11 @@ export default function Skills() {
 function Card({ name = "", children, isInView, delay = "0.25s" }) {
   return (
     <div
-      className="w-24 sm:w-32 aspect-square flex items-center justify-center sm:gap-2 flex-col rounded hover:shadow-md duration-300"
+      className="w-20 sm:w-32 aspect-square flex items-center justify-center sm:gap-2 flex-col rounded hover:shadow-md duration-300"
       style={{
         transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1)" + delay,
+        transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1)" + delay,
       }}
     >
       {children}
