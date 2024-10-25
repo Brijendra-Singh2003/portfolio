@@ -52,7 +52,7 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1GJ0Xwj1EWs8DsrJAlMn_vvC7kDAzemF6/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1IQ2Idrn1l18OL1aoq3_AWueKYavZIACu/view?usp=sharing"
                 className="group relative h-11 w-28 grid place-items-center border-2 border-gray-600 overflow-hidden"
               >
                 <div className="absolute left-0 duration-300 h-full w-0 bg-gray-800 group-hover:w-full" />
