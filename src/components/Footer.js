@@ -3,6 +3,7 @@ import { FaGithub, FaPhoneAlt } from "react-icons/fa";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
+import { GITHUB_PROFILE_LINK, INSTAGRAM_PROFILE_LINK, LINKEDIN_PROFILE_LINK, X_PROFILE_LINK } from "../constants/links";
 
 export default function Footer() {
   return (
@@ -11,16 +12,16 @@ export default function Footer() {
         <div class="flex sm:flex-row flex-col mb-4 ">
           <div class="w-full">
             <div class="flex gap-4 mt-4 flex-wrap justify-center md:justify-start">
-              <SocialLink href="https://github.com/Brijendra-Singh2003">
+              <SocialLink href={GITHUB_PROFILE_LINK}>
                 <FaGithub className="duration-500" />
               </SocialLink>
-              <SocialLink href="https://twitter.com/BrijendraS_op">
+              <SocialLink href={X_PROFILE_LINK}>
                 <FaXTwitter className="duration-500" />
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/brijendra-singh-047400241/">
+              <SocialLink href={LINKEDIN_PROFILE_LINK}>
                 <FaLinkedinIn className="duration-500" />
               </SocialLink>
-              <SocialLink href="https://instagram.com/brijendra361?igshid=YmMyMTA2M2Y=">
+              <SocialLink href={INSTAGRAM_PROFILE_LINK}>
                 <GrInstagram className="duration-500" />
               </SocialLink>
             </div>
@@ -55,7 +56,7 @@ const SocialLink = ({ href = "/", children }) => (
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="group relative grid place-items-center h-8 w-8  hover:text-[#eee]"
+    className="group relative grid place-items-center h-8 w-8 hover:text-[#eee]"
   >
     {children}
   </a>

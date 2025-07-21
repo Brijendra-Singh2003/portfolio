@@ -5,6 +5,7 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
 import { useInView } from "framer-motion";
+import { GITHUB_PROFILE_LINK, INSTAGRAM_PROFILE_LINK, LINKEDIN_PROFILE_LINK, RESUME_LINK, X_PROFILE_LINK } from "../constants/links";
 
 export default function Home() {
   const ref = useRef();
@@ -52,7 +53,7 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1kSA4mcYIPTsRmkakWNwt8Twwwr8gWmr_/view?usp=drive_link"
+                href={RESUME_LINK}
                 className="group relative h-11 w-28 grid place-items-center border-2 border-gray-600 overflow-hidden"
               >
                 <div className="absolute left-0 duration-300 h-full w-0 bg-gray-800 group-hover:w-full" />
@@ -70,16 +71,16 @@ export default function Home() {
                 transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
               }}
             >
-              <SocialLink href="https://github.com/Brijendra-Singh2003">
+              <SocialLink href={GITHUB_PROFILE_LINK}>
                 <TbBrandGithubFilled className="absolute size-7 group-hover:text-white duration-300" />
               </SocialLink>
-              <SocialLink href="https://twitter.com/BrijendraS_op">
+              <SocialLink href={X_PROFILE_LINK}>
                 <FaXTwitter className="absolute size-6 group-hover:text-white duration-300" />
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/brijendra-singh-047400241/">
+              <SocialLink href={LINKEDIN_PROFILE_LINK}>
                 <FaLinkedinIn className="absolute size-6 group-hover:text-white duration-300" />
               </SocialLink>
-              <SocialLink href="https://instagram.com/brijendra361?igshid=YmMyMTA2M2Y=">
+              <SocialLink href={INSTAGRAM_PROFILE_LINK}>
                 <GrInstagram className="absolute size-6 group-hover:text-white duration-300" />
               </SocialLink>
             </div>
