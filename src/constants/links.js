@@ -1,4 +1,4 @@
-export const RESUME_LINK = "https://drive.google.com/file/d/1cuKCDIO2SV0J_DGjMWyhOiZLN_gKZQZ9/view?usp=sharing";
+export const RESUME_LINK = "https://drive.google.com/file/d/1lAxsvUVHq7ZfNDkbJ3Z9b268FmIMoOUG/view?usp=sharing";
 
 export const GITHUB_PROFILE_LINK = "https://github.com/Brijendra-Singh2003";
 export const LINKEDIN_PROFILE_LINK = "https://www.linkedin.com/in/brijendra-singh-047400241/";
