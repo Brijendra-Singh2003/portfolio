@@ -31,9 +31,9 @@ export default function Home() {
             }}
           >
             <img
-              src={image || "https://avatars.githubusercontent.com/u/113870500"}
+              src={image || "https://avatars.githubusercontent.co/u/113870500"}
               alt=""
-              className="mx-auto mt-8 lg:mt-0 rounded-full bg-[--frontground] max-h-96 max-w-96 h-full w-full object-cover"
+              className="mx-auto mt-8 lg:mt-0 rounded-full bg-[--frontground] max-h-96 max-w-96 aspect-square h-full w-full object-cover"
             />
           </div>
           <div

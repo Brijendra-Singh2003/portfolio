@@ -24,14 +24,14 @@ export const projects = [
         tags: ["frontend", "web", "backend", "full-stack"],
         technologies: ["Next.js", "React.js", "MongoDB"],
     },
-    {
-        image: wallpaperAppImage,
-        title: "Wallpaper App",
-        codeLink: "https://github.com/Brijendra-Singh2003/wallpaper_app/",
-        description: "A react-native app to browse and download wallpapers.",
-        tags: ["frontend", "app",],
-        technologies: ["React-Native", "Expo"],
-    },
+    // {
+    //     image: wallpaperAppImage,
+    //     title: "Wallpaper App",
+    //     codeLink: "https://github.com/Brijendra-Singh2003/wallpaper_app/",
+    //     description: "A react-native app to browse and download wallpapers.",
+    //     tags: ["frontend", "app",],
+    //     technologies: ["React-Native", "Expo"],
+    // },
     {
         image: CNImage,
         title: "CN IIIT-BH website",
