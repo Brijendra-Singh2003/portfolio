@@ -34,11 +34,11 @@ export default function Contact() {
 
     emailjs
       .send(
-        process.env.REACT_APP_YOUR_SERVICE_ID,
-        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        import.meta.env.MAIL_SERVICE_ID,
+        import.meta.env.MAIL_TEMPLATE_ID,
         data,
         {
-          publicKey: process.env.REACT_APP_YOUR_PUBLIC_KEY,
+          publicKey: import.meta.env.MAIL_PUBLIC_KEY,
         }
       )
       .then(
